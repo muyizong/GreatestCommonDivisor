@@ -18,11 +18,23 @@ public class gcd {
 		}
 	}
 	
-	public static int greatestCommonDivisor(int a,int b) {
+	public static int greatestCommonDivisor(int a,int b) {//遞迴解
 		if(b == 0) {
 			return a;
 		}else {
 			return greatestCommonDivisor(b, a%b);
 		}
+	}
+	
+	public static int gcd( int a, int b ){//迴圈解
+		while( a != b ){
+			if( a > b ){
+				a -= b;
+			}
+			if( b > a )[
+				b -= a;
+			}
+		}
+		return a;
 	}
 }
