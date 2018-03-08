@@ -11,8 +11,11 @@ public class gcd {
 		m = input.nextInt();
 		System.out.print("請輸入第二個數字: ");
 		n = input.nextInt();
-						
-		System.out.printf("最大公因素為:%d%n", greatestCommonDivisor(m, n));
+		if( m > n ){
+			System.out.printf("最大公因素為:%d%n", greatestCommonDivisor(m, n));
+		}else{
+			System.out.printf("最大公因素為:%d%n", greatestCommonDivisor(n, m));
+		}
 	}
 	
 	public static int greatestCommonDivisor(int a,int b) {
